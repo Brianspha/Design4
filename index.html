@@ -21,7 +21,9 @@
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
-
+  <link href="css/vendor.css" rel="stylesheet">
+  <link href="css/base.css" rel="stylesheet">
+  <link href="css/styling.less" rel="stylesheet">
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -59,17 +61,31 @@
                 </ul>
               </li>
               <li><a href="#">Vision Mission Values</a></li>
+              <li><a href="#Finance">End User-Finance</a></li>
+
             </ul>
           </li>
           <li><a href="#about">Projects</a></li>
           <li><a href="#services">Invest</a></li>
-          <li class="menu-active"><a href="#portfolio">Get-Solor</a></li>
+          <li class="menu-active"><a href="#portfolio">Get-Solar</a></li>
           <li><a href="#team">Finance</a></li>
           <li><a href="#">Partners</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li class="menu-has-children"><a href="#login">Signup</a>
+            <ul>
+              <li>
+                <a href="#login">
+                  Login
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
-      </nav><!-- #nav-menu-container -->
+      </nav>
+
+
     </div>
+
   </header><!-- #header -->
 
   <!--==========================
@@ -113,7 +129,8 @@
               <div class="icon"><i class="fa fa-first-order"></i></div>
               <h4 class="title"><a href="">Distributed Ledger Technology</a></h4>
               <p class="description">Where Distributed Ledger Technology transects Distributed Power Technology
-                Invest in Renewable Energy and Sustainability Projects and contribute to Global Energy, Water and Food
+                Invest in Renewable Energy and Sustainability Projects and contribute to Global Energy, Water and
+                Food
                 Security</p>
             </div>
 
@@ -125,24 +142,57 @@
       </div>
     </section><!-- #about -->
 
+
+    <!--Login/ Signup Start-->
+
+    <section id="login">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <p class="display-1">Signup-Login</p>
+          <!--Signup popup Start-->
+          <div class="wrapper">
+            <div class="containerTemp">
+              <div class="signup">Sign Up</div>
+              <div class="login">Log In</div>
+              <div class="signup-form">
+                <input type="text" placeholder="Your Email Address" class="input"><br />
+                <input type="text" placeholder="Choose a Username" class="input"><br />
+                <input type="password" placeholder="Choose a Password" class="input"><br />
+                <div class="btn">Create account</div>
+              </div>
+              <div class="login-form">
+                <input type="text" placeholder="Email or Username" class="input"><br />
+                <input type="password" placeholder="Password" class="input"><br />
+                <div class="btn">log in</div>
+                <span><a href="#">I forgot my username or password.</a></span>
+              </div>
+            </div>
+          </div>
+          <!--Signup popup End-->
+        </div>
+      </div>
+    </section><!-- #about -->
+    <!--Login/ Signup End-->
+
+
     <!--==========================
-      Services Section
+How it works -Community
     ============================-->
     <section id="services">
       <div class="container wow fadeIn">
         <div class="section-header">
           <h3 class="section-title">How it works</h3>
-          <p class="section-description">Community</p>
+          <p class="display-1">Community</p>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="row TwoPerRow block-1-2 block-tab-full">
+          <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.2s">
             <div class="box">
               <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
               <h4 class="title"><a href="">Download</a></h4>
               <p class="description">Go Online or Download the SolarSwop App on your Mobile</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.4s">
             <div class="box">
               <div class="icon"><a href=""><i class="fa fa-pencil-square-o"></i></a></div>
               <h4 class="title"><a href="">Register</a></h4>
@@ -150,11 +200,12 @@
                 Solar Client for Free </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.6s">
             <div class="box" id="slide">
               <div class="icon"><a href=""><i class="fa fa-thumbs-o-up"></i></a></div>
               <h4 class="title"><a href="">Benifits</a></h4>
-              <p id="slide-body" class="description">Community Member Registration costs $100 USD per Month for Annual
+              <p id="slide-body" class="description">Community Member Registration costs $100 USD per Month for
+                Annual
                 Subscription
                 <p id="more" data-toggle="modal" data-target="#myModal">more...</p>
 
@@ -198,11 +249,12 @@
               </div>
             </div>
           </div>
-          <div id="centerItem" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.6s">
             <div class="box" id="slide">
               <div class="icon"><a href=""><i class="fa fa-users"></i></a></div>
               <h4 class="title"><a href="">Client</a></h4>
-              <p id="slide-body" class="description">Community Member Registration costs $100 USD per Month for Annual
+              <p id="slide-body" class="description">Community Member Registration costs $100 USD per Month for
+                Annual
                 Subscription
                 <p id="more" data-toggle="modal" data-target="#myModal1">more...</p>
 
@@ -246,56 +298,62 @@
         </div>
 
       </div>
-    </section><!-- #services -->
+    </section><!-- #How it works-Community -->
+
 
     <!--==========================
-    Call To Action Section
+    How it works 
     ============================-->
     <section id="call-to-action">
       <div class="container wow fadeIn">
         <div class="section-header">
-          <h3 class="section-title">How it Works</h3>
-          <p class="section-description">Investors</p>
+          <h3 id="WhiteText" class="section-title">How it Works</h3>
+          <p id="WhiteText" class="display-1">Investors</p>
         </div>
-        <div class="row">
-          <div id="centerItem" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+        <div class="row TwoPerRow block-1-2 block-tab-full">
+
+          <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.6s">
             <div class="box" id="slide">
-              <div class="icon"><a href=""><i class="fa  fa-folder fa-4x"></i></a></div>
-              <h4 class="title"><a href="">Wallet</a></h4>
-              <p id="slide-body" class="description">Open a Contribution Wallet from Account Dashboard, select Project
+              <div class="icon"><a href="#" class="WhiteIcon"><i class="fa  fa-folder fa-4x"></i></a></div>
+              <h4 class="title"><a href="#" class="WhiteText">Wallet</a></h4>
+              <p id="slide-body" class="WhiteText" class="description">Open a Contribution Wallet from Account
+                Dashboard, select Project
                 to Invest in and purchase
                 Tokens.
               </p>
-
             </div>
           </div>
-          <div id="centerItem" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.6s">
             <div class="box" id="slide">
-              <div class="icon"><a href=""><i class="fa fa-sun-o fa-4x"></i></a></div>
-              <h4 class="title"><a href="">Energy</a></h4>
-              <p id="slide-body" class="description">Tokens represent 1 kWh of energy production from the Power
+              <div class="icon"><a href="#" class="WhiteIcon"><i class="fa fa-sun-o fa-4x"></i></a></div>
+              <h4 class="title"><a href="#" class="WhiteText">Energy</a></h4>
+              <p id="slide-body" class="WhiteText" class="description">Tokens represent 1 kWh of energy production
+                from
+                the Power
                 Purchase Agreements of the Listed
                 Projects.
               </p>
 
             </div>
           </div>
-          <div id="centerItem" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.6s">
             <div class="box" id="slide">
-              <div class="icon"><a href=""><i class="fa fa-btc fa-4x"></i></a></div>
-              <h4 class="title"><a href="">Income</a></h4>
-              <p id="slide-body" class="description">Income from Usage or Power Purchase Agreements with reward paid to
+              <div class="icon"><a href="#" class="WhiteIcon"><i class="fa fa-btc fa-4x"></i></a></div>
+              <h4 class="title" class="WhiteText"><a href="#" class="WhiteText">Income</a></h4>
+              <p id="slide-body" class="WhiteText" class="description">Income from Usage or Power Purchase Agreements
+                with reward paid to
                 token through smart contract
 
               </p>
 
             </div>
           </div>
-          <div id="centerItem" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.6s">
             <div class="box" id="slide">
-              <div class="icon"><a href=""><i class="fa  fa-folder fa-4x"></i></a></div>
-              <h4 class="title"><a href="">Exchange</a></h4>
-              <p id="slide-body" class="description">Store tokens in wallet or trade token or liquidate from Dashboard.
+              <div class="icon"><a href="#" class="WhiteIcon"><i class="fa  fa-folder fa-4x"></i></a></div>
+              <h4 class="title"><a href="#" class="WhiteText">Exchange</a></h4>
+              <p id="slide-body" class="WhiteText" class="description">Store tokens in wallet or trade token or
+                liquidate from Dashboard.
                 Swop Project tokens for
                 Platform tokens (XSS). Trade XSS on Approved Crypto Exchanges.
               </p>
@@ -308,7 +366,7 @@
       </div>
     </section><!-- #call-to-action -->
 
-    
+
     <!--==========================
       Team Section
     ============================-->
@@ -316,52 +374,246 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">How it works</h3>
-          <p class="section-description">For Developers</p>
+          <p class="display-1">For Developers</p>
         </div>
-        <div class="row">
-            <div id="centerItem" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div class="box" id="slide">
-                <div class="icon"><a href=""><i class="fa  fa-pencil-square-o fa-4x"></i></a></div>
-                <h4 class="title"><a href="">Applications</a></h4>
-                <p id="slide-body" class="description">Submit an application for Project to be listed on Platform. Our EPC Team will evaluate the
-                    Project.
-                </p>
-  
-              </div>
+        <div class="row TwoPerRow block-1-2 block-tab-full">
+
+          <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.6s">
+            <div class="box" id="slide">
+              <div class="icon"><a href=""><i class="fa  fa-pencil-square-o fa-4x"></i></a></div>
+              <h4 class="title"><a href="">Applications</a></h4>
+              <p id="slide-body" class="description">Submit an application for Project to be listed on Platform. Our
+                EPC Team will evaluate the
+                Project.
+              </p>
+
             </div>
-            <div id="centerItem" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div class="box" id="slide">
-                <div class="icon"><a href=""><i class="fa fa-handshake-o fa-4x"></i></a></div>
-                <h4 class="title"><a href="">Acceptance</a></h4>
-                <p id="slide-body" class="description">Submit an application for Project to be listed on Platform. Our EPC Team will evaluate the
-                    Project.
-                </p>
-  
-              </div>
-            </div>
-            <div id="centerItem" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div class="box" id="slide">
-                <div class="icon"><a href=""><i class="fa fa-cogs fa-4x"></i></a></div>
-                <h4 class="title"><a href="">Development</a></h4>
-                <p id="slide-body" class="description">Project tokens are purchased by Community investors from Dashboard.
-  
-                </p>
-  
-              </div>
-            </div>
-            <div id="centerItem" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div class="box" id="slide">
-                <div class="icon"><a href=""><i class="fa   fa-puzzle-piece  fa-4x"></i></a></div>
-                <h4 class="title"><a href="">Start of Development</a></h4>
-                <p id="slide-body" class="description">Once more than 80% funded Project can commence. Funds released on approved Budget Plan
-                </p>
-  
-              </div>
-            </div>
-  
           </div>
+          <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.6s">
+            <div class="box" id="slide">
+              <div class="icon"><a href=""><i class="fa fa-handshake-o fa-4x"></i></a></div>
+              <h4 class="title"><a href="">Acceptance</a></h4>
+              <p id="slide-body" class="description">Submit an application for Project to be listed on Platform. Our
+                EPC Team will evaluate the
+                Project.
+              </p>
+
+            </div>
+          </div>
+          <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.6s">
+            <div class="box" id="slide">
+              <div class="icon"><a href=""><i class="fa fa-cogs fa-4x"></i></a></div>
+              <h4 class="title"><a href="">Development</a></h4>
+              <p id="slide-body" class="description">Project tokens are purchased by Community investors from
+                Dashboard.
+
+              </p>
+
+            </div>
+          </div>
+          <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.6s">
+            <div class="box" id="slide">
+              <div class="icon"><a href=""><i class="fa   fa-puzzle-piece  fa-4x"></i></a></div>
+              <h4 class="title"><a href="">Start of Development</a></h4>
+              <p id="slide-body" class="description">Once more than 80% funded Project can commence. Funds released
+                on
+                approved Budget Plan
+              </p>
+
+            </div>
+          </div>
+
+        </div>
       </div>
     </section><!-- #team -->
+
+
+
+    <!--End User Finance-->
+
+    <section id="Finance">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">End User-Finance</h3>
+        </div>
+      </div>
+
+      <div id="allignCenter" class="row TwoPerRow block-1-2 block-tab-full">
+
+        <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.6s">
+          <div class="box">
+            <div class="icon"><a href=""><i class="fa fa-exchange fa-4x"></i></a></div>
+            <h4 class="title"><a href="">Exchange</a></h4>
+            <p>Swop all or part of your current Electricity Bill for the usage of Solar Equipment and own
+              the
+              equipment within 10 years.
+              Making savings in the process and switch a Living Expense into an Investment
+            </p>
+          </div>
+        </div>
+        <div class="col-block TwoPerRow-item aos-init aos-animate" data-wow-delay="0.6s">
+          <div class="box">
+            <div class="icon"><a href=""><i class="fa fa-refresh fa-4x"></i></a></div>
+            <h4 class="title"><a href="">Return</a></h4>
+            <p>The Return on your Investment (ROI) could be as much R 350 000 within 15 Years</p>
+          </div>
+        </div>
+
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h3 class="section-title">How it works</h3>
+          </div>
+        </div>
+        <div id="expanderList" class="row section-header">
+          <ul>
+            <li>
+              <div class="icon">
+                <!-- Create an icon wrapped by the fa-stack class -->
+                <span class="fa-stack">
+                  <!-- The icon that will wrap the number -->
+                  <span class="fa fa-circle-o fa-stack-2x"></span>
+                  <!-- a strong element with the custom content, in this case a number -->
+                  <strong class="fa-stack-1x">
+                    1
+                  </strong>
+                </span>
+              </div>
+              <p class="expandP">Register online or on Mobile App.</p>
+            </li>
+            <li>
+              <div class="icon">
+                <!-- Create an icon wrapped by the fa-stack class -->
+                <span class="fa-stack">
+                  <!-- The icon that will wrap the number -->
+                  <span class="fa fa-circle-o fa-stack-2x"></span>
+                  <!-- a strong element with the custom content, in this case a number -->
+                  <strong class="fa-stack-1x">
+                    2
+                  </strong>
+                </span>
+              </div>
+              <p class="expandP">Conduct an energy audit to assess suitability abd savings potential.</p>
+            </li>
+            <li>
+              <div class="icon">
+                <!-- Create an icon wrapped by the fa-stack class -->
+                <span class="fa-stack">
+                  <!-- The icon that will wrap the number -->
+                  <span class="fa fa-circle-o fa-stack-2x"></span>
+                  <!-- a strong element with the custom content, in this case a number -->
+                  <strong class="fa-stack-1x">
+                    3
+                  </strong>
+                </span>
+              </div>
+              <p class="expandP">SolarSwop engineer and propose an Usage Agreement (UA) using the savings of
+                the
+                equipment as your monthly Usage payment .</p>
+            </li>
+            <li>
+              <div class="icon">
+                <!-- Create an icon wrapped by the fa-stack class -->
+                <span class="fa-stack">
+                  <!-- The icon that will wrap the number -->
+                  <span class="fa fa-circle-o fa-stack-2x"></span>
+                  <!-- a strong element with the custom content, in this case a number -->
+                  <strong class="fa-stack-1x">
+                    4
+                  </strong>
+                </span>
+              </div>
+              <p class="expandP">Clients Acepts UA and SolarSwop install Solar Equipment</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="expanderList" class="row section-header">
+          <ul>
+            <li class="reduceWidth">
+            </li>
+            <li>
+              <div class="icon">
+                <!-- Create an icon wrapped by the fa-stack class -->
+                <span class="fa-stack">
+                  <!-- The icon that will wrap the number -->
+                  <span class="fa fa-circle-o fa-stack-2x"></span>
+                  <!-- a strong element with the custom content, in this case a number -->
+                  <strong class="fa-stack-1x">
+                    5
+                  </strong>
+                </span>
+              </div>
+              <p class="expandP">SolarSwop Commission the Equipment and instruct clients bank of direct debit
+                on
+                UA Payment.</p>
+            </li>
+            <li>
+              <div class="icon">
+                <!-- Create an icon wrapped by the fa-stack class -->
+                <span class="fa-stack">
+                  <!-- The icon that will wrap the number -->
+                  <span class="fa fa-circle-o fa-stack-2x"></span>
+                  <!-- a strong element with the custom content, in this case a number -->
+                  <strong class="fa-stack-1x">
+                    6
+                  </strong>
+                </span>
+              </div>
+              <p class="expandP">Client starts his journey to a Sustainable lifestyle.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h3 class="section-title">The Benifits</h3>
+          </div>
+        </div>
+
+        <div id="expanderList" class="row section-header">
+          <ul>
+            <li>
+              <p class="expandP">Free Energy while the sun shines.
+
+              </p>
+            </li>
+            <li>
+              <p class="expandP">Save money and create and Create an Investment.</p>
+            </li>
+            <li>
+              <p class="expandP">No upfront payment neccesary, no loan application, no strain on your
+                cash flow.</p>
+            </li>
+            <li>
+              <p class="expandP">Protect yourself againts Electricity price hikes.</p>
+            </li>
+          </ul>
+
+        </div>
+
+        <div id="expanderList" class="row section-header">
+          <ul>
+            <li>
+              <p class="expandP">Peace of mind with insurance and maintainance included in the UA.
+
+              </p>
+            </li>
+            <li>
+              <p class="expandP">Hot water and Electricity during load shedding and Power Outages.</p>
+            </li>
+            <li>
+              <p class="expandP">Emotional reward by contributing to the preservation of the Planet.</p>
+            </li>
+            <li>
+              <p class="expandP">Protect yourself againts Electricity price hikes.</p>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section><!-- #team -->
+
+    <!--End User Finance-->
 
     <!--==========================
       Contact Section
@@ -370,7 +622,7 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Contact</h3>
-          <p class="section-description">We look forward to hearing from you!!</p>
+          <p class="display-1">We look forward to hearing from you!!</p>
         </div>
       </div>
 
@@ -382,7 +634,7 @@
 
           <div class="col-lg-3 col-md-4">
 
-   
+
 
             <div class="social-links">
               <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
